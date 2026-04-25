@@ -1,5 +1,4 @@
 
-/* ===== General ===== */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -12,7 +11,7 @@ body {
   padding-top: 30px;
 }
 
-/* ===== Navbar ===== */
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -37,7 +36,7 @@ body {
   text-decoration: underline;
 }
 
-/* ===== Login ===== */
+
 .login-container {
   display: flex;
   justify-content: center;
@@ -76,7 +75,7 @@ body {
   background: #3b40a4;
 }
 
-/* ===== Dashboard Buttons ===== */
+
 .dashboard-box {
   display: flex;
   flex-direction: column;
@@ -99,7 +98,7 @@ body {
   background: #1a252f;
 }
 
-/* ===== Forms ===== */
+
 .form-box {
   margin: 20px auto;
   display: flex;
@@ -127,7 +126,7 @@ body {
   background: #1e8449;
 }
 
-/* ===== Tables ===== */
+
 table {
   width: 100%;
   margin-top: 20px;
@@ -152,7 +151,7 @@ tr:hover {
   background: #f2f2f2;
 }
 
-/* ===== Buttons inside tables ===== */
+
 table button {
   padding: 5px 10px;
   border: none;
@@ -161,7 +160,7 @@ table button {
   color: white;
 }
 
-/* Delete */
+
 table button {
   background: #e74c3c;
 }
@@ -178,7 +177,7 @@ table button:hover {
   background: #1e8449;
 }
 
-/* ===== Search ===== */
+
 #search {
   width: 100%;
   padding: 10px;
@@ -187,7 +186,7 @@ table button:hover {
   border: 1px solid #ccc;
 }
 
-/* ===== Empty State ===== */
+
 td[colspan] {
   padding: 20px;
   font-weight: bold;
