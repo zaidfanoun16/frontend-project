@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Courses</title>
+  <link rel="stylesheet" href="style3.css">
+</head>
+<div class="navbar">
+  <h2>Student Panel 🎓</h2>
+
+  <div class="nav-links">
+    <a href="student-dashboard.html">Dashboard</a>
+    <a href="courses.html">Courses</a>
+    <a href="my-courses.html">My Courses</a>
+    <a href="#" onclick="logout()">Logout</a>
+  </div>
+</div>
+
+<div class="container">
+
+  <h1>Available Courses 📚</h1>
+
+  <!-- Search -->
+  <input type="text" id="search" placeholder="Search courses..." onkeyup="filterCourses()">
+
+  <!-- Table -->
+  <table>
+    <thead>
+      <tr>
+        <th>Course ID</th>
+        <th>Course Name</th>
+        <th>Instructor</th>
+        <th>Credits</th>
+        <th>Join</th>
+      </tr>
+    </thead>
+
+    <tbody id="coursesTable">
+      <!-- JS will fill this -->
+    </tbody>
+  </table>
+
+</div>
+<button onclick="registerCourse('${course.id}')">
+  Register
+</button>
+
+<script src="data.js"></script>
+<script src="script3.js"></script>
+
+</body>
+</html>

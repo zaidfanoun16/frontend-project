@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Courses</title>
+  <link rel="stylesheet" href="style8.css">
+</head>
+<body>
+
+
+<div class="navbar">
+  <h2>Student Panel 🎓</h2>
+  <div class="nav-links">
+    <a href="student-dashboard.html">Dashboard</a>
+    <a href="courses.html">Courses</a>
+    <a href="my-courses.html">My Courses</a>
+    <a href="#" onclick="logout()">Logout</a>
+  </div>
+</div>
+
+<div class="container">
+  <h1>My Courses 📘</h1>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Course ID</th>
+        <th>Name</th>
+        <th>Instructor</th>
+        <th>Credits</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+
+    <tbody id="myCoursesTable"></tbody>
+  </table>
+</div>
+
+<script src="datamycourses.js"></script>
+<script src="mycourses.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+.dashboard-box {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 300px;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.dashboard-box button {
+  padding: 12px;
+  font-size: 16px;
+  background: #2c3e50;
+  color: white;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.dashboard-box button:hover {
+  background: #1a252f;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #2c3e50;
+  color: white;
+  padding: 15px 30px;
+}
+
+.navbar h2 {
+  margin: 0;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  margin-left: 15px;
+  font-size: 16px;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}

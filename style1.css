@@ -1,0 +1,58 @@
+body {
+background-color: #f8fafc;
+}
+
+
+.navbar {
+background-color: #2563eb;
+}
+
+.navbar-brand,
+.nav-link,
+.navbar-text {
+color: white !important;
+}
+
+
+.card-box {
+border-radius: 15px;
+transition: 0.3s;
+}
+
+.card-box:hover {
+transform: scale(1.05);
+}
+
+
+.btn-main {
+background-color: #2563eb;
+color: white;
+}
+
+.btn-main:hover {
+background-color: #1d4ed8;
+color: white;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #2c3e50;
+  color: white;
+  padding: 15px 30px;
+}
+
+.navbar h2 {
+  margin: 0;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  margin-left: 15px;
+  font-size: 16px;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,40 @@
+table {
+  margin-top: 20px;
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+}
+
+th, td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+th {
+  background: #2c3e50;
+  color: white;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #2c3e50;
+  color: white;
+  padding: 15px 30px;
+}
+
+.navbar h2 {
+  margin: 0;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  margin-left: 15px;
+  font-size: 16px;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}

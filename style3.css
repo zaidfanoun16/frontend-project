@@ -1,0 +1,65 @@
+.container {
+  width: 80%;
+  margin: auto;
+  padding-top: 30px;
+}
+
+table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+  background: white;
+}
+
+th, td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+th {
+  background: #4e54c8;
+  color: white;
+}
+
+button {
+  padding: 5px 10px;
+  background: green;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background: darkgreen;
+}
+
+#search {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #2c3e50;
+  color: white;
+  padding: 15px 30px;
+}
+
+.navbar h2 {
+  margin: 0;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  margin-left: 15px;
+  font-size: 16px;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}

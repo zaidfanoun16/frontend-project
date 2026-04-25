@@ -1,0 +1,27 @@
+body {
+  background-color: #f8fafc;
+  font-family: Arial, sans-serif;
+}
+
+.card {
+ border: 2px solid #2563eb;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(37, 99, 235, 0.3);
+}
+
+h3 {
+  color: #1e293b;
+}
+
+label {
+  color: #334155;
+}
+
+.btn-primary {
+  background-color: #2563eb;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #1d4ed8;
+}

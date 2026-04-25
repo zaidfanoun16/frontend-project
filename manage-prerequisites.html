@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Manage Prerequisites</title>
+  <link rel="stylesheet" href="style6.css">
+</head>
+<body>
+    <div class="navbar">
+  <h2>Admin Panel 👨‍💼</h2>
+
+  <div class="nav-links">
+    <a href="admin-dashboard.html">Dashboard</a>
+    <a href="manage-courses.html">Courses</a>
+    <a href="manage-prerequisites.html">Prerequisites</a>
+    <a href="registration-overview.html">Overview</a>
+    <a href="#" onclick="logout()">Logout</a>
+  </div>
+</div>
+
+<div class="container">
+
+  <h1>Manage Prerequisites 🔗</h1>
+
+  <!-- Form -->
+  <div class="form-box">
+
+    <input type="text" id="course" placeholder="Course ID (e.g. CS102)">
+    <input type="text" id="prerequisite" placeholder="Prerequisite (e.g. CS101)">
+
+    <button onclick="addPrerequisite()">Add Relation</button>
+
+  </div>
+
+  <!-- Table -->
+  <table>
+    <thead>
+      <tr>
+        <th>Course</th>
+        <th>Prerequisite</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+
+    <tbody id="prTable"></tbody>
+  </table>
+
+</div>
+
+<script src="data2.js"></script>
+<script src="script6.js"></script>
+
+</body>
+</html>

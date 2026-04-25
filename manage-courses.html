@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Manage Courses</title>
+  <link rel="stylesheet" href="style5.css">
+</head>
+<body>
+ <div class="navbar">
+  <h2>Admin Panel 👨‍💼</h2>
+
+  <div class="nav-links">
+    <a href="admin-dashboard.html">Dashboard</a>
+    <a href="manage-courses.html">Courses</a>
+    <a href="manage-prerequisites.html">Prerequisites</a>
+    <a href="registration-overview.html">Overview</a>
+    <a href="#" onclick="logout()">Logout</a>
+  </div>
+</div>
+
+<div class="container">
+
+  <h1>Manage Courses 📚</h1>
+
+  <!-- Add Course Form -->
+  <div class="form-box">
+
+    <input type="text" id="courseId" placeholder="Course ID">
+    <input type="text" id="courseName" placeholder="Course Name">
+    <input type="text" id="instructor" placeholder="Instructor">
+    <input type="number" id="credits" placeholder="Credits">
+
+    <button onclick="addCourse()">Add Course</button>
+
+  </div>
+
+  <!-- Table -->
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Instructor</th>
+        <th>Credits</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+
+    <tbody id="manageCoursesTable"></tbody>
+  </table>
+
+</div>
+
+<script src="data1.js"></script>
+<script src="jscript5.js"></script>
+
+</body>
+</html>

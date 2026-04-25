@@ -1,0 +1,195 @@
+
+/* ===== General ===== */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(120deg, #4e54c8, #8f94fb);
+}
+
+.container {
+  width: 85%;
+  margin: auto;
+  padding-top: 30px;
+}
+
+/* ===== Navbar ===== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #2c3e50;
+  color: white;
+  padding: 15px 30px;
+}
+
+.navbar h2 {
+  margin: 0;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  margin-left: 15px;
+  font-size: 15px;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Login ===== */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+.login-box {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.login-box input {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.login-box button {
+  width: 100%;
+  padding: 10px;
+  background: #4e54c8;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.login-box button:hover {
+  background: #3b40a4;
+}
+
+/* ===== Dashboard Buttons ===== */
+.dashboard-box {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 300px;
+  margin: 50px auto;
+}
+
+.dashboard-box button {
+  padding: 12px;
+  font-size: 16px;
+  background: #2c3e50;
+  color: white;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.dashboard-box button:hover {
+  background: #1a252f;
+}
+
+/* ===== Forms ===== */
+.form-box {
+  margin: 20px auto;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.form-box input {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.form-box button {
+  padding: 10px 15px;
+  background: #27ae60;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.form-box button:hover {
+  background: #1e8449;
+}
+
+/* ===== Tables ===== */
+table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+}
+
+th {
+  background: #34495e;
+  color: white;
+}
+
+tr:hover {
+  background: #f2f2f2;
+}
+
+/* ===== Buttons inside tables ===== */
+table button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+}
+
+/* Delete */
+table button {
+  background: #e74c3c;
+}
+
+table button:hover {
+  background: #c0392b;
+}
+
+.register-btn {
+  background: #27ae60;
+}
+
+.register-btn:hover {
+  background: #1e8449;
+}
+
+/* ===== Search ===== */
+#search {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+/* ===== Empty State ===== */
+td[colspan] {
+  padding: 20px;
+  font-weight: bold;
+  color: #555;
+}
