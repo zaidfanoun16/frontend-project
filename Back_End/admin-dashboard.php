@@ -76,4 +76,3 @@ $full_courses        = $conn->query("
 </div>
 </body>
 </html>
-
