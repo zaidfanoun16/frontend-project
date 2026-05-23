@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 15 مايو 2026 الساعة 23:28
+-- Generation Time: 23 مايو 2026 الساعة 20:21
 -- إصدار الخادم: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -39,7 +39,7 @@ CREATE TABLE `admins` (
 --
 
 INSERT INTO `admins` (`id`, `name`, `email`, `password`) VALUES
-(1, 'Mohammed Aljabri', 'admin@test.com', '1234');
+(1, 'Mohammed Aljabri', 'admin@test.com', '$2y$10$gulBr7A.o.9ZhaLqjb0owOxWUs11X3zpiJX2ffKroo9HCUqfo7KxW');
 
 -- --------------------------------------------------------
 
@@ -107,8 +107,8 @@ CREATE TABLE `course_prerequisites` (
 --
 
 INSERT INTO `course_prerequisites` (`id`, `course_id`, `prerequisite_course_id`) VALUES
-(1, 2, 1),
 (2, 3, 1),
+(4, 3, 2),
 (3, 4, 2);
 
 -- --------------------------------------------------------
@@ -123,6 +123,14 @@ CREATE TABLE `registrations` (
   `course_id` int(11) NOT NULL,
   `registration_date` datetime NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- إرجاع أو استيراد بيانات الجدول `registrations`
+--
+
+INSERT INTO `registrations` (`id`, `student_id`, `course_id`, `registration_date`) VALUES
+(23, 3, 1, '2026-05-23 11:04:16'),
+(24, 1, 5, '2026-05-23 11:10:49');
 
 -- --------------------------------------------------------
 
@@ -143,9 +151,9 @@ CREATE TABLE `students` (
 --
 
 INSERT INTO `students` (`id`, `student_number`, `name`, `email`, `password`) VALUES
-(1, '231102', 'Hosam Tarade', 'hosam@test.com', '1234'),
-(2, '231114', 'Bahaa Zaheda', 'bahaa@test.com', '1234'),
-(3, '231087', 'Zaid Fanoun', 'zaid@test.com', '1234');
+(1, '231102', 'Hosam Tarade', 'hosam@test.com', '$2y$10$gulBr7A.o.9ZhaLqjb0owOxWUs11X3zpiJX2ffKroo9HCUqfo7KxW'),
+(2, '231114', 'Bahaa Zaheda', 'bahaa@test.com', '$2y$10$gulBr7A.o.9ZhaLqjb0owOxWUs11X3zpiJX2ffKroo9HCUqfo7KxW'),
+(3, '231087', 'Zaid Fanoun', 'zaid@test.com', '$2y$10$gulBr7A.o.9ZhaLqjb0owOxWUs11X3zpiJX2ffKroo9HCUqfo7KxW');
 
 --
 -- Indexes for dumped tables
@@ -217,19 +225,19 @@ ALTER TABLE `completed_courses`
 -- AUTO_INCREMENT for table `courses`
 --
 ALTER TABLE `courses`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `course_prerequisites`
 --
 ALTER TABLE `course_prerequisites`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `registrations`
 --
 ALTER TABLE `registrations`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 
 --
 -- AUTO_INCREMENT for table `students`
