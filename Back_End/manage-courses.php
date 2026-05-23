@@ -152,14 +152,7 @@ if (isset($_GET["edit_id"])) {
         <td><span class="badge bg-primary"><?= htmlspecialchars($c["course_code"]) ?></span></td>
         <td><?= htmlspecialchars($c["title"]) ?></td>
         <td class="text-center"><?= $c["credits"] ?></td>
-        <td>
-          <div class="d-flex align-items-center gap-2">
-            <div class="progress flex-grow-1" style="height:10px;">
-              <div class="progress-bar <?= $bar_color ?>" style="width:<?= $percent ?>%"></div>
-            </div>
-            <small><?= $c["enrolled"] ?> / <?= $c["capacity"] ?></small>
-          </div>
-        </td>
+        <td><?= $c["enrolled"] ?> / <?= $c["capacity"] ?></td>
         <td>
           <a href="manage-courses.php?edit_id=<?= $c["id"] ?>" class="btn btn-warning btn-sm me-1">
              Edit
@@ -177,5 +170,6 @@ if (isset($_GET["edit_id"])) {
 </table>
 
 </div>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
 </body>
 </html>
